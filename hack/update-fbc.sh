@@ -77,7 +77,7 @@ done
 
 if [[ -n "$target" ]]; then
     if [[ -f "$target" ]]; then
-        update_single_fbc "$target"
+        update_single_fbc "$target" "$env"
     elif [[ -d "$target" ]]; then
         echo "Processing directory $target for $env environment"
         update_all_fbc "$target" "$env"
